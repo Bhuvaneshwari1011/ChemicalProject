@@ -30,7 +30,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     `nav-link ${isActive ? "fw-bold" : ""}`
                   }
-                  to="/"
+                  to="/ChemicalProject/"
                 >
                   Home
                 </NavLink>
