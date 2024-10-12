@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./HomeStyle.css";
 import aboutUsImage from "../assets/pagesImages/AboutUs.jpg";
 import para from "../assets/pagesImages/par.jpg";
 import serviceImage1 from "../assets/pagesImages/Service1.jpg";
@@ -12,7 +12,7 @@ import whoWeAreImage from "../assets/pagesImages/who.png";
 import gif1 from "../assets/pagesImages/gif1.gif";
 import gif2 from "../assets/pagesImages/gif2.gif";
 import gif3 from "../assets/pagesImages/gif3.gif";
-import SliderComponent from "../Slider/SliderComponent";
+import SliderComponent from "../Slider/BannerSlider";
 import SlidingText from "../Slider/SlidingText";
 import ServiceImages from "../Components/ServiceImages";
 import GifDisplay from "../Helper/GifDisplay";

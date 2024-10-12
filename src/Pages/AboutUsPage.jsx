@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css';
+import './AboutUsStyles.css';
 // import Aboutbanner from '../assets/Allpagebanner.jpg'; // Correctly importing the image
 // import aboutImage from '../assets/Service5copy.jpg'; // Correctly importing the image
 // import whyUsImage from '../assets/WhyUsImage.jpg'; // Importing the new image for Why Us section

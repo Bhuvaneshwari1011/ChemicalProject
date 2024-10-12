@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
-import Home from "./Pages/Home";
-import AboutUs from "./Pages/AboutUs";
-import Services from "./Pages/Services";
-import Gallery from "./Pages/Gallery";
-import Enquiry from "./Pages/Enquiry";
-import ContactUs from "./Pages/ContactUs";
+import Home from "./Pages/HomePage";
+import AboutUs from "./Pages/AboutUsPage";
+import Services from "./Pages/ServicesPage";
+import Gallery from "./Pages/GalleryPage";
+import Enquiry from "./Pages/EnquiryPage";
+import ContactUs from "./Pages/ContactUsPage";
 
 const App = () => {
   return (

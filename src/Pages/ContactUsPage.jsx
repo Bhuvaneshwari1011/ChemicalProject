@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactUs.css";
+import "./ContactUsStyle.css";
 import Footer from "../Components/Footer";
 import bannerImage from "../assets/pagesImages/Allpagebanner.jpg";
 

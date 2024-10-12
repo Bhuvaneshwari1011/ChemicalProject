@@ -1,7 +1,7 @@
 import React from "react";
-import "./Enquiry.css";
-import bannerImage from "../assets/Allpagebanner.jpg";
-import enquiryImage from "../assets/tableten.webp";
+import "./EnquiryStyle.css";
+import bannerImage from "../assets/pagesImages/Allpagebanner.jpg";
+import enquiryImage from "../assets/pagesImages/tableten.webp";
 import Footer from "../Components/Footer";
 
 const Enquiry = () => {

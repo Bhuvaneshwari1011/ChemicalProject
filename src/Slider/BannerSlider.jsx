@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./SliderComponent.css"; // Custom CSS for styling
+import "./BannerSlider.css"; // Custom CSS for styling
 
 const images = [
   {
