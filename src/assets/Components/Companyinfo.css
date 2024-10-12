@@ -1,0 +1,33 @@
+.company-info {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-info h1, 
+.company-info h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.company-info p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.company-info blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    color: #666;
+    border-left: 4px solid #ccc;
+    padding-left: 20px;
+}
+
+.company-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.company-info a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+/* QuoteSection.css */
+.quote-section {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add margin */
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space between quote and GIFs */
+}
+
+.gif-image {
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+}

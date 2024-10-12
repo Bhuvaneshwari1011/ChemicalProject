@@ -1,0 +1,260 @@
+ 
+  
+  .services-section {
+    margin: 20px 0;
+  }
+  
+  .par-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: right;
+  }
+  
+  .para-image {
+    flex: 2;
+    max-width: 25%; /* Adjust max-width as needed */
+    /* max-height: 60% */
+  }
+  
+  .text-segment {
+    flex: wrap text;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-around;
+  }
+  
+  .text-block {
+    margin: 10px 0; /* Space between each block */
+  }
+  .about-us {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center align items vertically */
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+  
+  .about-us {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center align items vertically */
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+  
+  .about-text {
+    flex: 1; /* Allow text to take available space */
+    padding-right: 20px; /* Add some space between text and image */
+  }
+  
+  .about-image {
+    width: 455px; /* Set specific width */
+    height: 207px; /* Set specific height */
+    max-width: 100%; /* Ensure the image does not exceed the container */
+    height: auto; /* Maintain aspect ratio for responsive design */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+
+  .who-we-are {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding */
+    margin: 20px 0; /* Add margin */
+    border: 1px solid #ccc; /* Optional border for the box */
+    border-radius: 8px; /* Optional border radius */
+  }
+  
+  .who-we-are-text {
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Add space between text and image */
+  }
+  
+  .who-we-are-image {
+    flex: 0 0 40%; /* Image takes up 40% of the space */
+  }
+  
+  .who-we-are-image img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 8px; /* Optional border radius for the image */
+  }
+  
+  
+  
+  
+  
+  
+  .service-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust to fit your design */
+  }
+  
+  .service-image {
+    flex: 1 1 30%; /* Adjust to fit your design */
+    margin: 10px; /* Space between images */
+    max-width: 100%; /* Responsive images */
+    height: auto;
+  }
+  
+ 
+  
+  .quote-section {
+    margin: 20px 0;
+  }
+  
+  .ourmis {
+    margin: 20px 0;
+  }
+  
+
+/* Content Section after Banner */
+.content-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* Centers the content section horizontally */
+    align-items: flex-start;
+    margin-top: 40px;
+    max-width: 1200px;
+    /* To control the width of the entire content */
+}
+
+/* Image Section */
+.content-image {
+    width: 392px;
+    height: 543px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text Grid Section */
+.content-text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.text-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.text-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.about-us-section {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    margin-top: 40px;
+    /* Space above this section */
+    gap: 20px;
+    /* Space between image and text */
+    max-width: 1200px;
+    /* Control the overall width */
+}
+
+.about-us-image {
+    width: 455px;
+    /* Set desired width for the image */
+    height: 207px;
+    /* Set desired height for the image */
+    border-radius: 8px;
+    /* Optional: add border radius */
+}
+
+.about-us-text {
+    flex: 1;
+    /* Allow text to take available space */
+    max-width: 600px;
+    /* Control the width of the text */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.about-us-text h3 {
+    font-size: 1.5em;
+    /* Font size for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.about-us-text p {
+    font-size: 1.2em;
+    /* Font size for the paragraph */
+    color: #333;
+    /* Text color */
+    line-height: 1.6;
+    /* Line height for better readability */
+}
+
+.services-section {
+    margin: 20px 0;
+    /* Space above and below the section */
+}
+
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows images to wrap onto a new line */
+    gap: 10px;
+    /* Space between images */
+    justify-content: flex-end;
+    /* Align images to the right */
+}
+
+.service-image {
+    width: 293px;
+    /* Set the width */
+    height: 276px;
+    /* Set the height */
+    object-fit: cover;
+    /* Ensures the image fits within the specified dimensions */
+}
+
+.service-image:nth-child(1),
+.service-image:nth-child(2) {
+    flex: 0 0 50%;
+    /* First two images take half the width each */
+}
+
+.service-image:nth-child(3),
+.service-image:nth-child(4),
+.service-image:nth-child(5) {
+    flex: 0 0 33.33%;
+    /* Remaining three images take one-third of the width each */
+}
+
+  
+/* Mission Section */
+.ourmis{
+    margin-top: 40px; /* Space above the mission section */
+    text-align: center; /* Center the text */
+  }
+  .quote-section {
+    margin: 40px 0; /* Space above and below the quote section */
+    text-align: center; /* Center the text */
+  }
+  
+  blockquote {
+    font-size: 1.5em; /* Adjust font size for the quote */
+    font-style: italic; /* Italicize the quote */
+    margin: 20px 0; /* Space around the blockquote */
+    color: #141414; /* Change color if needed */
+  }
+  
+ 
+ 

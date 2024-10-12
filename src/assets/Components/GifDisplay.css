@@ -1,0 +1,11 @@
+.gif-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gif-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}

@@ -1,0 +1,11 @@
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+hr {
+  border-top: 1px solid #ffffff;
+}

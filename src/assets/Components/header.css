@@ -1,0 +1,13 @@
+h1 {
+    font-size: 2.5rem;
+    color: #333; /* Default color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and size */
+  }
+  
+  /* Hover effect */
+  h1:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  

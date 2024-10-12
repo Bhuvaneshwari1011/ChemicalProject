@@ -1,0 +1,76 @@
+/* General styles for both sections */
+.banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Shared styles for both 'About Us' and 'Why Us' sections */
+.about-us-section, .why-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.about-us-section .content, .why-us-section .content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-us-section .image, .why-us-section .image {
+  flex: 1;
+}
+
+.about-us-section .image img, .why-us-section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Section-specific styles */
+.about-us-section {
+  background-color: #fff;
+}
+
+.why-us-section {
+  background-color: #f3f3f3; /* Light gray background to differentiate */
+}
+
+/* Headings for sections */
+.about-us-section h2, .why-us-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-us-section p, .why-us-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-us-section, .why-us-section {
+    flex-direction: column; /* Stack content and image vertically on small screens */
+  }
+  
+  .about-us-section .content, .why-us-section .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-us-section .image img, .why-us-section .image img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,15 @@
+.sliding-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .sliding-text {
+    display: inline-flex;
+  }
+  
+  .slide {
+    display: inline-block;
+    padding: 0 0.2rem; /* Adjust spacing if needed */
+  }
+  

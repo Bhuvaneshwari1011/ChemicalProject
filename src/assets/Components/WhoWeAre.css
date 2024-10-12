@@ -1,0 +1,5 @@
+ 
+.image {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}

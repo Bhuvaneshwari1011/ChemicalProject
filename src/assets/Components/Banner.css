@@ -1,0 +1,111 @@
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw; /* Full viewport width */
+    height: 600px; /* Set to the desired height of your images */
+}
+
+.banner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+    width: 100%; /* Ensures the banner spans the full width */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+    position: relative;
+}
+
+.slide img {
+    width: 100%; /* Ensure the image covers the full width */
+    height: 100%; /* Set height to 100% to fill the container */
+    object-fit: cover; /* Maintain the aspect ratio while covering the entire area */
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    color: white;
+    font-size: 2rem; /* Responsive font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-message {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem; /* Responsive font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+    .banner-message {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1.2rem; /* Even smaller for very small screens */
+    }
+    .banner-message {
+        font-size: 0.8rem; /* Even smaller for very small screens */
+    }
+}
+
+.banner {
+    background-color: #001f3f; /* Dark blue background */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .moving-text {
+    font-size: 48px;
+    color: white;
+    animation: moveText 3s ease-in-out infinite;
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

@@ -1,0 +1,12 @@
+/* ServiceImages.css */
+.service-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust spacing as needed */
+}
+
+.service-image {
+  width: calc(20% - 10px); /* Adjust size based on the number of images */
+  margin-bottom: 10px; /* Space between rows */
+  border-radius: 8px; /* Optional: rounded corners */
+}
