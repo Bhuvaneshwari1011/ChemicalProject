@@ -2,7 +2,7 @@ import React from "react";
 import "./Enquiry.css";
 import bannerImage from "../assets/Allpagebanner.jpg";
 import enquiryImage from "../assets/tableten.webp";
-import Footer from "../assets/Components/Footer";
+import Footer from "../Components/Footer";
 
 const Enquiry = () => {
   return (

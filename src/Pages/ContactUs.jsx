@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
-import Footer from "../assets/Components/Footer";
+import Footer from "../Components/Footer";
 import bannerImage from "../assets/Allpagebanner.jpg";
 
 const ContactUs = () => {

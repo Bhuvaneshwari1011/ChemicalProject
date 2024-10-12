@@ -12,14 +12,14 @@ import whoWeAreImage from "../assets/who.png";
 import gif1 from "../assets/gif1.gif";
 import gif2 from "../assets/gif2.gif";
 import gif3 from "../assets/gif3.gif";
-import SlidingText from "../assets/Components/SlidingText";
 import SliderComponent from "../assets/Slider/SliderComponent";
-import ServiceImages from "../assets/Components/ServiceImages";
-import GifDisplay from "../assets/Components/GifDisplay";
-import WhoWeAre from "../assets/Components/WhoWeAre";
-import QuoteSection from "../assets/Components/QuoteSection";
-import Footer from "../assets/Components/Footer";
-import ChemicalInfo from "../assets/Components/ChemicalInfo";
+import SlidingText from "../assets/Slider/SlidingText";
+import ServiceImages from "../Components/ServiceImages";
+import GifDisplay from "../assets/Helper/GifDisplay";
+import WhoWeAre from "../Components/WhoWeAre";
+import QuoteSection from "../assets/Helper/QuoteSection";
+import Footer from "../Components/Footer";
+import ChemicalInfo from "../assets/Helper/ChemicalInfo";
 
 const Home = () => {
   const serviceImages = [
