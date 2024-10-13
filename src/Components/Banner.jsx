@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import banner1 from "../banner/banner1.jpg"; // Go up one directory
+import banner1 from "../banner/banner1.avif"; // Go up one directory
 import banner2 from "../banner/banner2.jpg";
 import banner3 from "../banner/banner3 copy.jpg";
 import './Banner.css'; // Import your CSS file

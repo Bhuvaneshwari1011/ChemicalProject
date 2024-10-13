@@ -6,66 +6,96 @@
 
 .banner-image {
   width: 100%;
-  height: auto;
+  max-height: 480px;
+  object-fit: fill;
   border-radius: 8px;
 }
 
-/* Shared styles for both 'About Us' and 'Why Us' sections */
 .about-us-section, .why-us-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
+  margin: 40px auto; 
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #ffeded;
   border-radius: 8px;
+  height: 300px; 
+  width: 90%; 
+  max-width: 1200px; 
+  gap: 20px;
 }
 
-.about-us-section .content, .why-us-section .content {
-  flex: 1;
-  margin-right: 20px;
-}
-
+.about-us-section .content, .why-us-section .content,
 .about-us-section .image, .why-us-section .image {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
 }
+
+
+.why-us-section .image {
+  flex: 1.1; 
+}
+
 
 .about-us-section .image img, .why-us-section .image img {
   width: 100%;
-  height: auto;
+  height: 95%; /* Slight increase in height */
+  object-fit: cover; /* Prevent distortion */
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Section-specific styles */
+.about-us-section .image img:hover, .why-us-section .image img:hover {
+  transform: scale(1.05); /* Zoom-in on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section-specific layouts */
 .about-us-section {
   background-color: #fff;
+  flex-direction: row-reverse; /* Image on the right */
 }
 
 .why-us-section {
-  background-color: #f3f3f3; /* Light gray background to differentiate */
+  background-color: #f3f3f3;
+  flex-direction: row; /* Image on the left */
 }
 
-/* Headings for sections */
+/* Headings for both sections */
 .about-us-section h2, .why-us-section h2 {
   font-size: 28px;
   color: #333;
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%; /* Full width for alignment */
 }
 
 .about-us-section p, .why-us-section p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #555;
+  text-align: justify;
+  margin: 0;
 }
 
-/* Responsive design */
+/* Consistent padding within content sections */
+.about-us-section .content, .why-us-section .content {
+  padding: 10px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .about-us-section, .why-us-section {
-    flex-direction: column; /* Stack content and image vertically on small screens */
+    flex-direction: column; /* Stack vertically */
+    height: auto; /* Adjust height */
+    width: 95%; /* Slight reduction for small screens */
   }
-  
+
   .about-us-section .content, .why-us-section .content {
-    margin-right: 0;
     margin-bottom: 20px;
   }
 

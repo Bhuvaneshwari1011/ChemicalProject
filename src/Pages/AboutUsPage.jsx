@@ -1,15 +1,16 @@
 import React from 'react';
 import './AboutUsStyles.css';
-// import Aboutbanner from '../assets/Allpagebanner.jpg'; // Correctly importing the image
-// import aboutImage from '../assets/Service5copy.jpg'; // Correctly importing the image
-// import whyUsImage from '../assets/WhyUsImage.jpg'; // Importing the new image for Why Us section
+import bannerabout from '../assets/gallery/bannerabout.jpg'; // Correctly importing the image
+import aboutimage1 from '../assets/gallery/aboutimage1.jpg'; // Correctly importing the image
+import whyuss from '../assets/gallery/whyuss.webp';
+import Footer from '../Components/Footer'; // Importing the new image for Why Us section
 
 const AboutUs = () => {
   return (
     <div>
       {/* Banner Section with Image */}
       <div className="banner">
-        {/* <img src={Aboutbanner} alt="Banner" className="banner-image" /> */}
+        <img src={bannerabout} alt="Banner" className="banner-image" />
         <h1>Welcome to My Website</h1>
       </div>
 
@@ -22,7 +23,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="image">
-          {/* <img src={aboutImage} alt="About Us" /> */}
+          <img src={aboutimage1} alt="About Us" />
         </div>
       </div>
 
@@ -35,9 +36,10 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="image">
-          {/* <img src={whyUsImage} alt="Why Us" /> */}
+          <img src={whyuss} alt="Why Us" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

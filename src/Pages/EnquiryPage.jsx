@@ -1,6 +1,6 @@
 import React from "react";
 import "./EnquiryStyle.css";
-import bannerImage from "../assets/pagesImages/Allpagebanner.jpg";
+import bannerImage from "../assets/gallery/bannerabout.jpg";
 import enquiryImage from "../assets/pagesImages/tableten.webp";
 import Footer from "../Components/Footer";
 

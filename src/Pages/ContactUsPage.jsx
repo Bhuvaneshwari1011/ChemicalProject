@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactUsStyle.css";
 import Footer from "../Components/Footer";
-import bannerImage from "../assets/pagesImages/Allpagebanner.jpg";
+import bannerImage from "../assets/gallery/bannerabout.jpg";
 
 const ContactUs = () => {
   return (

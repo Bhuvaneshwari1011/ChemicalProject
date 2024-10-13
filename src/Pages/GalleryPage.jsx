@@ -1,6 +1,6 @@
 import React from "react";
 import "./GalleryStyle.css";
-import bannerImage from "../assets/pagesImages/Allpagebanner.jpg";
+import galleryban from "../assets/gallery/galleryban.jpg";
 import image1 from "../assets/gallery/pic1.png";
 import image2 from "../assets/gallery/pic2.jpg";
 import image3 from "../assets/gallery/pic3.jpg";
@@ -13,11 +13,7 @@ import image9 from "../assets/gallery/pic9.jpg";
 import image10 from "../assets/gallery/pic10.jpg";
 import image11 from "../assets/gallery/pic11.jpg";
 import image12 from "../assets/gallery/pic12.gif";
-import image13 from "../assets/gallery/pic13.jpg";
-import image14 from "../assets/gallery/pic14.gif";
-import image15 from "../assets/gallery/pic15.jpg";
-import image16 from "../assets/gallery/pic16.jpg";
-import image17 from "../assets/gallery/pic17.jpg";
+import Footer from "../Components/Footer";
 
 const Gallery = () => {
   // Array of images for the gallery
@@ -34,18 +30,14 @@ const Gallery = () => {
     image10,
     image11,
     image12,
-    image13,
-    image14,
-    image15,
-    image16,
-    image17,
+    
   ];
 
   return (
     <div>
       {/* Banner Section */}
       <div className="gallery-banner">
-        <img src={bannerImage} alt="Gallery Banner" className="banner-image" />
+        <img src={galleryban} alt="Gallery Banner" className="banner-image" />
       </div>
 
       {/* Gallery Images Section */}
@@ -56,9 +48,11 @@ const Gallery = () => {
             src={image}
             alt={`Gallery Image ${index + 1}`}
             className="gallery-image"
+            style={{ animationDelay: `${index * 0.2}s` }}
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
