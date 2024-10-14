@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownOpen(false);
+  };
+
+  const handleServicesClick = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <header className="bg-blue-500 text-white p-2">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -45,15 +59,34 @@ const Header = () => {
                   About Us
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "fw-bold" : ""}`
-                  }
-                  to="/services"
+              <li
+                className="nav-item dropdown"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <a
+                  href="/services"
+                  className={`nav-link dropdown-toggle ${
+                    isDropdownOpen ? "" : ""
+                  }`}
+                  onClick={handleServicesClick} 
                 >
                   Services
-                </NavLink>
+                </a>
+                {isDropdownOpen && (
+                  <ul className="dropdown-menu show">
+                    <li>
+                      <NavLink className="dropdown-item" to="/services/info">
+                        Info
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="dropdown-item" to="/services/author">
+                        Author
+                      </NavLink>
+                    </li>
+                  </ul>
+                )}
               </li>
               <li className="nav-item">
                 <NavLink
